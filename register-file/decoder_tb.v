@@ -4,7 +4,7 @@ module decoder4to16_tb;
     decoder4to16 decInstance(.regDest(regDest), .decOut(decOut));
     initial
     begin
-        $dumpfile("decoder4to16.vcd");
+        $dumpfile("decoder.vcd");
         $dumpvars(0, regDest, decOut);
         regDest = 4'b0;
         repeat(15)

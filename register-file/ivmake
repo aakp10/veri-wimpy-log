@@ -1,0 +1,4 @@
+#!/bin/sh
+iverilog -o $1 -c $2
+vvp $1
+gtkwave $1.vcd &
